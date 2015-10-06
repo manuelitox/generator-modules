@@ -1,0 +1,19 @@
+// Pseudo Classes
+// ===============
+
+/// Pseudo classes' generator
+///
+/// @param $declarations [map]
+/// 
+@mixin gen-pseudo-classes($declarations) {
+	@if (length($declarations) <= 1) {
+		@error 'You should pass more of a declaration';
+	}
+	@each $declaration in $declarations {
+		&:#{nth($declaration, 1)} {
+			@each $property, $value in nth($declaration, 2) {
+				#{$property}: $value;
+			}
+		}
+	}
+}
