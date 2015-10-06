@@ -1,0 +1,19 @@
+{
+  "name": "generator-modules",
+  "version": "0.0.1",
+  "description": "Generator modules for Sass",
+  "main": "sass/main.scss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manuelitox/generator-modules.git"
+  },  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Sass",
+    "Scss"
+  ],
+  "author": "Manuel Gonzalez <hola@manuelitox.com>",
+  "license": "MIT"
+}
