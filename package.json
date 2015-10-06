@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/manuelitox/generator-modules.git"
-  },  
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
     "Scss"
   ],
   "author": "Manuel Gonzalez <hola@manuelitox.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass-true": "^2.0.2"
+  }
 }
