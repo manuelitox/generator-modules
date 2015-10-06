@@ -1,0 +1,11 @@
+// Attribute
+// ==========
+
+/// Attribute's generator.
+///
+/// @param $property [string]
+/// @param $value [string, number]
+/// 
+@mixin gen-attribute($property, $value) {
+	#{$property}: $value;
+}

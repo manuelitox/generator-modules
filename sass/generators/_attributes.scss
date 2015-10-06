@@ -1,0 +1,12 @@
+// Attributes
+// ===========
+
+/// Attributes' generator.
+///
+/// @param $declarations [map]
+/// 
+@mixin gen-attributes($declarations) {
+	@each $property, $value in $declarations {
+		#{$property}: $value;
+	}
+}
