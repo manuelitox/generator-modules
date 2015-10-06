@@ -6,6 +6,9 @@
 /// @param $declarations [map]
 /// 
 @mixin gen-attributes($declarations) {
+	@if (length($declarations) <= 1) {
+		@warn 'You should pass more of a declaration or you can use the gen-attribute mixin';
+	}	
 	@each $property, $value in $declarations {
 		#{$property}: $value;
 	}

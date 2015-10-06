@@ -7,7 +7,7 @@
 /// 
 @mixin gen-pseudo-classes($declarations) {
 	@if (length($declarations) <= 1) {
-		@error 'You should pass more of a declaration';
+		@warn 'You should pass more of a declaration or you can use the gen-pseudo-class mixin';
 	}
 	@each $declaration in $declarations {
 		&:#{nth($declaration, 1)} {
