@@ -1,0 +1,12 @@
+// Component
+// ==========
+
+/// Component's generator.
+///
+/// @param $name [string]
+/// 
+@mixin gen-component($name) {
+	.#{$name} {
+		@content;
+	}
+}
