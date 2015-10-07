@@ -4,7 +4,7 @@ install:
   - "gem install sass"
 
 script:
-  - sass --watch generator-modules/tests/main.scss:main.css
+  - sass --watch /tests/main.scss:main.css
 
 branches:
   only:
