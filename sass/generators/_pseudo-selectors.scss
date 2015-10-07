@@ -1,11 +1,11 @@
-// Pseudo Classes
+// Pseudo Selector
 // ===============
 
-/// Pseudo classes' generator
+/// Pseudo selector's generator
 ///
 /// @param $declarations [map]
 /// 
-@mixin gen-pseudo-classes($declarations) {
+@mixin gen-pseudo-selectors($declarations) {
 	@if (length($declarations) <= 1) {
 		@warn 'You should pass more of a declaration or you can use the gen-pseudo-class mixin';
 	}

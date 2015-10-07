@@ -1,0 +1,15 @@
+// Pseudo Selector
+// ===============
+
+/// Pseudo Selector's generator
+///
+/// @param $pseudo-selector [string]
+/// @param $declarations [map]
+/// 
+@mixin gen-pseudo-selector($pseudo-selector, $declarations) {
+	&:#{$pseudo-selector} {
+		@each $property, $value in $declarations {
+			#{$property}: $value;
+		}
+	}
+}
