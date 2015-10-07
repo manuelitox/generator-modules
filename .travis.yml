@@ -8,7 +8,7 @@ install:
   - "gem install sass"
 
 script:
-  - sass --watch tests/main.scss:tests/main.css
+  - sass tests/main.scss:tests/main.css
 
 branches:
   only:
