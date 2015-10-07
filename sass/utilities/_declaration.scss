@@ -1,0 +1,12 @@
+// Declaration
+// ============
+
+/// Get declaration.
+///
+/// @param $declarations [map]
+/// 
+@mixin get-declaration($declarations) {
+	@each $property, $value in $declarations {
+	 	#{$property}: $value;
+	}
+};

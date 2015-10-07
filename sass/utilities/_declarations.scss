@@ -1,0 +1,14 @@
+// Declarations
+// =============
+
+/// Get declarations.
+///
+/// @param $declarations [map]
+/// 
+@mixin get-declarations($declarations) {
+	@each $declaration in $declarations {
+		&:#{nth($declaration, 1)} {
+			@include get-declaration(nth($declaration, 2));
+		}
+	}
+}

@@ -1,4 +1,7 @@
-// Partials
+// Utilities
+@import 'utilities/declaration';
+@import 'utilities/declarations';
+// Generators
 @import 'generators/component';
 @import 'generators/attribute';
 @import 'generators/attributes';

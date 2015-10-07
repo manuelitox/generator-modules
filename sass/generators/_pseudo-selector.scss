@@ -8,8 +8,6 @@
 /// 
 @mixin gen-pseudo-selector($pseudo-selector, $declarations) {
 	&:#{$pseudo-selector} {
-		@each $property, $value in $declarations {
-			#{$property}: $value;
-		}
+		@include get-declaration($declarations);
 	}
 }

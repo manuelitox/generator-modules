@@ -8,8 +8,6 @@
 /// 
 @mixin gen-state($state, $declarations) {
 	&.#{$state} {
-		@each $property, $value in $declarations {
-			#{$property}: $value;
-		}
+		@include get-declaration($declarations);
 	}
 }
