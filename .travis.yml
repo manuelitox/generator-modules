@@ -1,0 +1,11 @@
+---
+language: ruby
+install:
+  - "gem install sass"
+
+script:
+  - sass --watch tests/main.scss:main.css
+
+branches:
+  only:
+    - master
