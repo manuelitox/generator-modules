@@ -1,0 +1,19 @@
+// States
+// =======
+
+/// States' generator
+///
+/// @param $declarations [map]
+/// 
+@mixin gen-states($declarations) {
+	@if (length($declarations) <= 1) {
+		@warn 'You should pass more of a declaration or you can use the gen-state mixin';
+	}
+	@each $declaration in $declarations {
+		&.#{nth($declaration, 1)} {
+			@each $property, $value in nth($declaration, 2) {
+				#{$property}: $value;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// State
+// ===============
+
+/// State's generator
+///
+/// @param $state [string]
+/// @param $declarations [map]
+/// 
+@mixin gen-state($state, $declarations) {
+	&.#{$state} {
+		@each $property, $value in $declarations {
+			#{$property}: $value;
+		}
+	}
+}
