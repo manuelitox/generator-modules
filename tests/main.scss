@@ -1,0 +1,14 @@
+// import true library
+@import '../node_modules/sass-true/sass/true';
+// import project
+@import '../sass/main';
+// unit tests
+@import 'generators/attribute';
+@import 'generators/attributes';
+@import 'generators/component';
+@import 'generators/pseudo-selector';
+@import 'generators/pseudo-selectors';
+@import 'generators/state';
+@import 'generators/states';
+// generate report of the true library
+@include report();

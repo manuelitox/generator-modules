@@ -1,0 +1,27 @@
+@include test-module('Generator of states') {	
+	@include test('gen-states() [mixin]') {
+		@include assert('Should output the appropriate styles') {
+			@include input {
+				$base-states: (
+					active: (
+						display: block,
+					),
+					deactivated: (
+						display: none,
+					)
+				) !default;			
+				html {
+					@include gen-states($base-states);
+				}
+			}
+			@include expect {
+				html.active {
+					display: block;
+				}
+				html.deactivated {
+					display: none;
+				}
+			}
+		}	
+	}	
+}

@@ -1,0 +1,21 @@
+@include test-module('Generator of state') {	
+	@include test('gen-state() [mixin]') {
+		@include assert('Should output the appropriate styles') {
+			@include input {
+				$base-active: (
+					background-color: red,
+					border-color: yellow
+				) !default;				
+				html {
+					@include gen-state('active', $base-active);
+				}
+			}
+			@include expect {
+				html.active {
+					background-color: red;
+					border-color: yellow;
+				}
+			}
+		}	
+	}	
+}

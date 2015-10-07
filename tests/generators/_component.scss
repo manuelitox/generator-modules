@@ -1,0 +1,16 @@
+@include test-module('Generator of component') {	
+	@include test('gen-component() [mixin]') {
+		@include assert('Should output the appropriate style') {
+			@include input {
+				@include gen-component('header') {
+					@include gen-attribute(background-color, red);
+				};
+			}
+			@include expect {
+				.header {
+					background-color: red;
+				}
+			}
+		}	
+	}	
+}

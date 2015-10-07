@@ -1,0 +1,16 @@
+@include test-module('Generator of attribute') {	
+	@include test('gen-attribute() [mixin]') {
+		@include assert('Should output the appropriate style') {
+			@include input {
+				html {
+					@include gen-attribute(background-color, red);
+				}
+			}
+			@include expect {
+				html {
+					background-color: red;
+				}
+			}
+		}	
+	}	
+}

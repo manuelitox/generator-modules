@@ -1,0 +1,19 @@
+@include test-module('Generator of pseudo selector') {	
+	@include test('gen-pseudo-selector() [mixin]') {
+		@include assert('Should output the appropriate style') {
+			@include input {
+				$base-hover: (
+					background-color: yellow
+				) !default;				
+				html {
+					@include gen-pseudo-selector('hover', $base-hover);
+				}
+			}
+			@include expect {
+				html:hover {
+					background-color: yellow;
+				}
+			}
+		}	
+	}	
+}

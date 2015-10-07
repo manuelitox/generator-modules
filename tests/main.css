@@ -1,0 +1,69 @@
+/* # Generator of attribute ---------- */
+/* gen-attribute() [mixin] */
+[data-module="Generator of attribute"] [data-test="gen-attribute() [mixin]"] [data-assert="Should output the appropriate style"] .input html {
+  background-color: red; }
+[data-module="Generator of attribute"] [data-test="gen-attribute() [mixin]"] [data-assert="Should output the appropriate style"] .expect html {
+  background-color: red; }
+
+/* # Generator of attributes ---------- */
+/* gen-attributes() [mixin] */
+[data-module="Generator of attributes"] [data-test="gen-attributes() [mixin]"] [data-assert="Should output the appropriate styles"] .input html {
+  background-color: red;
+  margin: 0; }
+[data-module="Generator of attributes"] [data-test="gen-attributes() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html {
+  background-color: red;
+  margin: 0; }
+
+/* # Generator of component ---------- */
+/* gen-component() [mixin] */
+[data-module="Generator of component"] [data-test="gen-component() [mixin]"] [data-assert="Should output the appropriate style"] .input .header {
+  background-color: red; }
+[data-module="Generator of component"] [data-test="gen-component() [mixin]"] [data-assert="Should output the appropriate style"] .expect .header {
+  background-color: red; }
+
+/* # Generator of pseudo selector ---------- */
+/* gen-pseudo-selector() [mixin] */
+[data-module="Generator of pseudo selector"] [data-test="gen-pseudo-selector() [mixin]"] [data-assert="Should output the appropriate style"] .input html:hover {
+  background-color: yellow; }
+[data-module="Generator of pseudo selector"] [data-test="gen-pseudo-selector() [mixin]"] [data-assert="Should output the appropriate style"] .expect html:hover {
+  background-color: yellow; }
+
+/* # Generator of pseudo selectors ---------- */
+/* gen-pseudo-selectors() [mixin] */
+[data-module="Generator of pseudo selectors"] [data-test="gen-pseudo-selectors() [mixin]"] [data-assert="Should output the appropriate styles"] .input html:hover {
+  background-color: yellow; }
+[data-module="Generator of pseudo selectors"] [data-test="gen-pseudo-selectors() [mixin]"] [data-assert="Should output the appropriate styles"] .input html:focus {
+  background-color: blue; }
+[data-module="Generator of pseudo selectors"] [data-test="gen-pseudo-selectors() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html:hover {
+  background-color: yellow; }
+[data-module="Generator of pseudo selectors"] [data-test="gen-pseudo-selectors() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html:focus {
+  background-color: blue; }
+
+/* # Generator of state ---------- */
+/* gen-state() [mixin] */
+[data-module="Generator of state"] [data-test="gen-state() [mixin]"] [data-assert="Should output the appropriate styles"] .input html.active {
+  background-color: red;
+  border-color: yellow; }
+[data-module="Generator of state"] [data-test="gen-state() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html.active {
+  background-color: red;
+  border-color: yellow; }
+
+/* # Generator of states ---------- */
+/* gen-states() [mixin] */
+[data-module="Generator of states"] [data-test="gen-states() [mixin]"] [data-assert="Should output the appropriate styles"] .input html:active {
+  display: block; }
+[data-module="Generator of states"] [data-test="gen-states() [mixin]"] [data-assert="Should output the appropriate styles"] .input html:deactivated {
+  display: none; }
+[data-module="Generator of states"] [data-test="gen-states() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html.active {
+  display: block; }
+[data-module="Generator of states"] [data-test="gen-states() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html.deactivated {
+  display: none; }
+
+/* # SUMMARY ---------- */
+/* 7 Tests: */
+/*  - 0 Passed */
+/*  - 0 Failed */
+/*  - 7 Output to CSS */
+/* -------------------- */
+
+/*# sourceMappingURL=main.css.map */
