@@ -1,0 +1,16 @@
+// Length variable
+// ================
+
+/// Check the variable's length.
+///
+/// @param $min-length [number]
+/// @param $var-map [map]
+/// 
+@mixin check-length-var($min-length: 1, $var-map: null) {
+	@if (type-of($min-length) != number) {
+		@error 'the $min-length value should be a number';
+	}
+	@if (length($var-map) <= 1) {
+		@warn 'You should pass more of a declaration';
+	}
+}

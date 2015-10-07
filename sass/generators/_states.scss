@@ -6,8 +6,6 @@
 /// @param $declarations [map]
 /// 
 @mixin gen-states($declarations) {
-	@if (length($declarations) <= 1) {
-		@warn 'You should pass more of a declaration or you can use the gen-state mixin';
-	}
+	@include check-length-var(1, $declarations);
 	@include get-declarations($declarations);
 }
