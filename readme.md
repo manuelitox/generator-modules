@@ -4,6 +4,8 @@
 
 Generate stylesheets with Sass, using Maps and Mixins.
 
+The documentation you can find in the [sassdoc/index.html](https://github.com/manuelitox/generator-modules/blob/master/sassdoc/index.html) file
+
 ### Install:
 
 1. ```$ npm i generator-modules ```
@@ -11,7 +13,7 @@ Generate stylesheets with Sass, using Maps and Mixins.
 
 ### Example:
 
-#### First, we will declare the attributes that we want have in the style sheet.
+First, we will declare the attributes that we want have in the style sheet.
 
 ```sass
 $box: (
@@ -35,7 +37,7 @@ $box-active: (
 ) !default;
 ```
 
-#### Now, We go to work with the generator:
+Now, We go to work with the generator:
 
 ```sass
 @include gen-component('box') {
