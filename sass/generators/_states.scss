@@ -8,6 +8,6 @@
 /// @require {mixin} check-length-var
 /// @require {mixin} get-declarations
 @mixin gen-states($declarations) {
-	@include check-length-var(1, $declarations);
+	@include check-length-var($declarations);
 	@include get-declarations($declarations);
 }
