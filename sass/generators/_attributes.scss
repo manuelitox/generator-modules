@@ -3,8 +3,10 @@
 
 /// Attributes' generator.
 ///
-/// @param $declarations [map]
+/// @param {map} $declarations
 /// 
+/// @require {mixin} check-length-var
+/// @require {mixin} get-declaration 
 @mixin gen-attributes($declarations) {
 	@include check-length-var(1, $declarations);
 	@include get-declaration($declarations);

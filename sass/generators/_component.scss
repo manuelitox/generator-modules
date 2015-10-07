@@ -3,7 +3,7 @@
 
 /// Component's generator.
 ///
-/// @param $name [string]
+/// @param {string} $name
 /// 
 @mixin gen-component($name) {
 	.#{$name} {

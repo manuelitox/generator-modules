@@ -3,8 +3,10 @@
 
 /// States' generator
 ///
-/// @param $declarations [map]
+/// @param {map} $declarations
 /// 
+/// @require {mixin} check-length-var
+/// @require {mixin} get-declarations
 @mixin gen-states($declarations) {
 	@include check-length-var(1, $declarations);
 	@include get-declarations($declarations);

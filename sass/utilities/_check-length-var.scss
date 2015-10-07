@@ -3,8 +3,8 @@
 
 /// Check the variable's length.
 ///
-/// @param $min-length [number]
-/// @param $var-map [map]
+/// @param {number} $min-length [1]
+/// @param {map} $var-map [null]
 /// 
 @mixin check-length-var($min-length: 1, $var-map: null) {
 	@if (type-of($min-length) != number) {

@@ -3,8 +3,8 @@
 
 /// Attribute's generator.
 ///
-/// @param $property [string]
-/// @param $value [string, number]
+/// @param {string} $property
+/// @param $value
 /// 
 @mixin gen-attribute($property, $value) {
 	#{$property}: $value;

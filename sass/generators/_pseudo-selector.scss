@@ -3,9 +3,10 @@
 
 /// Pseudo Selector's generator
 ///
-/// @param $pseudo-selector [string]
-/// @param $declarations [map]
+/// @param {string} $pseudo-selector
+/// @param {map} $declarations 
 /// 
+/// @require {mixin} get-declaration
 @mixin gen-pseudo-selector($pseudo-selector, $declarations) {
 	&:#{$pseudo-selector} {
 		@include get-declaration($declarations);

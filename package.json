@@ -17,6 +17,7 @@
   "author": "Manuel Gonzalez <hola@manuelitox.com>",
   "license": "MIT",
   "devDependencies": {
-    "sass-true": "^2.0.2"
+    "sass-true": "^2.0.2",
+    "sassdoc": "^2.1.15"
   }
 }

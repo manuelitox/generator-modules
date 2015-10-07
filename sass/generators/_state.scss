@@ -3,9 +3,10 @@
 
 /// State's generator
 ///
-/// @param $state [string]
-/// @param $declarations [map]
+/// @param {string} $state
+/// @param {map} $declarations
 /// 
+/// @require {mixin} get-declaration
 @mixin gen-state($state, $declarations) {
 	&.#{$state} {
 		@include get-declaration($declarations);

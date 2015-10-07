@@ -3,7 +3,7 @@
 
 /// Get declarations.
 ///
-/// @param $declarations [map]
+/// @param {map} $declarations
 /// 
 @mixin get-declarations($declarations) {
 	@each $declaration in $declarations {
