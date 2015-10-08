@@ -21,6 +21,13 @@
 [data-module="Generator of component"] [data-test="gen-component() [mixin]"] [data-assert="Should output the appropriate style"] .expect .header {
   background-color: red; }
 
+/* # Generator of internal component ---------- */
+/* gen-internal-component() [mixin] */
+[data-module="Generator of internal component"] [data-test="gen-internal-component() [mixin]"] [data-assert="Should output the appropriate style"] .input .box-header {
+  background-color: red; }
+[data-module="Generator of internal component"] [data-test="gen-internal-component() [mixin]"] [data-assert="Should output the appropriate style"] .expect .box-header {
+  background-color: red; }
+
 /* # Generator of pseudo selector ---------- */
 /* gen-pseudo-selector() [mixin] */
 [data-module="Generator of pseudo selector"] [data-test="gen-pseudo-selector() [mixin]"] [data-assert="Should output the appropriate style"] .input html:hover {
@@ -60,10 +67,10 @@
   display: none; }
 
 /* # SUMMARY ---------- */
-/* 7 Tests: */
+/* 8 Tests: */
 /*  - 0 Passed */
 /*  - 0 Failed */
-/*  - 7 Output to CSS */
+/*  - 8 Output to CSS */
 /* -------------------- */
 
 /*# sourceMappingURL=main.css.map */
