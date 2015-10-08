@@ -1,0 +1,18 @@
+@include test-module('Generator of internal component') {	
+	@include test('gen-internal-component() [mixin]') {
+		@include assert('Should output the appropriate style') {
+			@include input {
+				@include gen-component('box') {
+					@include gen-internal-component('header') {
+						@include gen-attribute(background-color, red);
+					}
+				};
+			}
+			@include expect {
+				.box-header {
+					background-color: red;
+				}
+			}
+		}	
+	}	
+}

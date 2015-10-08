@@ -1,0 +1,12 @@
+// Internal Component
+// ===================
+
+/// Internal Component's generator.
+///
+/// @param {string} $name
+/// 
+@mixin gen-internal-component($name) {
+	&-#{$name} {
+		@content;
+	}
+}
