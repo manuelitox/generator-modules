@@ -45,6 +45,9 @@ Now, We go to work with the generator:
 	@include gen-attributes($box);
 	@include gen-pseudo-selectors($box-pseudo-class);
 	@include gen-state('active', $box-active);
+	@include gen-internal-component('header') {
+		@include gen-attribute(color, red);
+	}
 }
 ```
 
@@ -54,9 +57,9 @@ Now, We go to work with the generator:
 ```css
 .box {
 	padding: 10px;
-	background-color: red,
-	color: white,
-	margin: 20px	
+	background-color: red;
+	color: white;
+	margin: 20px;	
 }
 .box:hover {
 	background-color: yellow;
@@ -67,5 +70,8 @@ Now, We go to work with the generator:
 .box.active {
 	background-color: gray;
 	color: black;
+}
+.box-header {
+	color: red;
 }
 ```
