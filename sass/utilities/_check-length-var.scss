@@ -7,6 +7,6 @@
 /// 
 @mixin check-length-var($var-map: null) {
 	@if (length($var-map) <= 1) {
-		@warn 'You should pass more of a declaration';
+		@warn 'You should pass more of one declaration.';
 	}
 }
