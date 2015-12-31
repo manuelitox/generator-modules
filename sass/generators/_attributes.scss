@@ -7,7 +7,9 @@
 /// 
 /// @require {mixin} check-length-var
 /// @require {mixin} get-declaration 
-@mixin gen-attributes($declarations) {
+/// @require {function} merge-declarations
+@mixin gen-attributes($declarations...) {
+	$declarations: merge-declarations($declarations);
 	@include check-length-var($declarations);
 	@include get-declaration($declarations);
 }
