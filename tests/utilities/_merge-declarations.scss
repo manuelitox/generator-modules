@@ -1,0 +1,30 @@
+@include test-module('Merge several declarations') {
+	@include test('It should merge two maps') {
+		$theme: (
+			background-color: green,
+			color: red
+		) !default;
+		$properties: (
+			font-size: 1.2rem,
+			margin: 10px
+		) !default;	
+		$actual: merge-declarations(($theme, $properties));
+		$expected: (background-color: green, color: red, font-size: 1.2rem, margin: 10px);
+		@include assert-equal($actual, $expected);
+	}
+	@include test('It should merge three maps') {
+		$theme: (
+			background-color: green
+		) !default;
+		$theme-2: (
+			color: red
+		) !default;
+		$properties: (
+			font-size: 1.2rem,
+			margin: 10px
+		) !default;	
+		$actual: merge-declarations(($theme, $theme-2, $properties));
+		$expected: (background-color: green, color: red, font-size: 1.2rem, margin: 10px);
+		@include assert-equal($actual, $expected);		
+	}
+}	

@@ -1,3 +1,18 @@
+.header {
+  font-size: 1.4rem;
+  padding: 1.2rem; }
+
+/* # Merge several declarations ---------- */
+/* It should merge two maps */
+[data-module="Merge several declarations"] [data-test="It should merge two maps"] .assert-equal {
+  -result: PASS;
+  -description: ""; }
+
+/* It should merge three maps */
+[data-module="Merge several declarations"] [data-test="It should merge three maps"] .assert-equal {
+  -result: PASS;
+  -description: ""; }
+
 /* # Generator of attribute ---------- */
 /* gen-attribute() [mixin] */
 [data-module="Generator of attribute"] [data-test="gen-attribute() [mixin]"] [data-assert="Should output the appropriate style"] .input html {
@@ -13,6 +28,16 @@
 [data-module="Generator of attributes"] [data-test="gen-attributes() [mixin]"] [data-assert="Should output the appropriate styles"] .expect html {
   background-color: red;
   margin: 0; }
+[data-module="Generator of attributes"] [data-test="gen-attributes() [mixin]"] [data-assert="Should output the appropriate styles with several declarations"] .input html {
+  font-size: 1.3rem;
+  margin: 0;
+  background-color: red;
+  color: green; }
+[data-module="Generator of attributes"] [data-test="gen-attributes() [mixin]"] [data-assert="Should output the appropriate styles with several declarations"] .expect html {
+  font-size: 1.3rem;
+  margin: 0;
+  background-color: red;
+  color: green; }
 
 /* # Generator of component ---------- */
 /* gen-component() [mixin] */
@@ -67,8 +92,8 @@
   display: none; }
 
 /* # SUMMARY ---------- */
-/* 8 Tests: */
-/*  - 0 Passed */
+/* 10 Tests: */
+/*  - 2 Passed */
 /*  - 0 Failed */
 /*  - 8 Output to CSS */
 /* -------------------- */
