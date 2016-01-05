@@ -1,0 +1,19 @@
+// Merge Declaration
+// ==================
+
+/// Merge several declarations
+///
+/// @param {map} $declarations
+///
+@function merge-declarations($declarations) {
+	$amount   : length($declarations);
+	$new-list : () !default;
+	@if ($amount > 1) {
+		@for $i from 1 through $amount {
+			$new-list: map-merge($new-list, nth($declarations, $i));
+		}		
+	} @else {
+		$new-list: nth($declarations, 1);
+	}
+	@return $new-list;
+}

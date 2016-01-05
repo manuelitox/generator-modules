@@ -13,8 +13,11 @@
   ],
   "author": "Manuel Gonzalez <hola@manuelitox.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "sass --watch tests/main.scss:tests/main.css"
+  },
   "devDependencies": {
     "sass-true": "^2.0.2",
-    "sassdoc": "^2.1.15"
+    "sassdoc": "^2.1.19"
   }
 }

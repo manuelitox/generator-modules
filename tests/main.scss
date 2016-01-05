@@ -3,6 +3,7 @@
 // import project
 @import '../sass/main';
 // unit tests
+@import 'utilities/merge-declarations';
 @import 'generators/attribute';
 @import 'generators/attributes';
 @import 'generators/component';

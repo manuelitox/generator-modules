@@ -17,5 +17,28 @@
 				}
 			}
 		}	
+		@include assert('Should output the appropriate styles with several declarations') {
+			@include input {
+				$base: (
+					font-size: 1.3rem,
+					margin: 0
+				)!default;
+				$theme: (
+					background-color: red,
+					color: green
+				)!default;
+				html {
+					@include gen-attributes($base, $theme);
+				}
+			}
+			@include expect {
+				html {
+					font-size: 1.3rem;
+					margin: 0;
+					background-color: red;
+					color: green;
+				}
+			}
+		}			
 	}	
 }
